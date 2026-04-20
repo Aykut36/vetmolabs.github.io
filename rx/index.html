@@ -1,13 +1,33 @@
 <!DOCTYPE html>
-<html>
+<html lang="tr">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VetA — Klinik Referans Notu</title>
+  <style>
+    body { background: #0A0F1E; color: #e5e7eb; font-family: -apple-system, sans-serif; }
+  </style>
+</head>
+<body>
+  <div id="content">Yükleniyor...</div>
   <script>
-    const code = window.location.search.split('code=')[1];
-    if (code) {
-      window.location.href = `https://qgqnrvjhlhdodlcnekrh.supabase.co/functions/v1/rx/${code}`;
+    const params = new URLSearchParams(window.location.search);
+    const code = params.get('code');
+    
+    if (!code) {
+      document.getElementById('content').innerHTML = '<p style="padding:24px;color:#ef4444">Geçersiz link.</p>';
+    } else {
+      fetch(`https://qgqnrvjhlhdodlcnekrh.supabase.co/functions/v1/rx?code=${code}`)
+        .then(res => res.text())
+        .then(html => {
+          document.open();
+          document.write(html);
+          document.close();
+        })
+        .catch(() => {
+          document.getElementById('content').innerHTML = '<p style="padding:24px;color:#ef4444">Bir hata oluştu.</p>';
+        });
     }
   </script>
-</head>
-<body></body>
+</body>
 </html>
