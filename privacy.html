@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>VetA — Gizlilik Politikası</title>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --green: #0d6e4f;
+      --green-light: #12a374;
+      --dark: #080f0c;
+      --text: #e8f5ee;
+      --muted: #7aab8f;
+      --border: #1a3328;
+      --card: #111d16;
+    }
+    body {
+      background: var(--dark);
+      color: var(--text);
+      font-family: 'DM Sans', sans-serif;
+      font-weight: 300;
+      line-height: 1.8;
+    }
+    nav {
+      position: fixed;
+      top: 0; left: 0; right: 0;
+      z-index: 100;
+      padding: 20px 48px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      background: rgba(8,15,12,0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border);
+    }
+    .logo {
+      font-family: 'Syne', sans-serif;
+      font-weight: 700;
+      font-size: 1.4rem;
+      color: var(--text);
+      text-decoration: none;
+    }
+    .logo span { color: #1de9a0; }
+    nav a.back {
+      color: var(--muted);
+      text-decoration: none;
+      font-size: 0.9rem;
+      transition: color 0.2s;
+    }
+    nav a.back:hover { color: #1de9a0; }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 120px 24px 80px;
+    }
+    .badge {
+      display: inline-block;
+      padding: 4px 14px;
+      border: 1px solid var(--green);
+      border-radius: 100px;
+      font-size: 0.75rem;
+      color: #1de9a0;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin-bottom: 24px;
+    }
+    h1 {
+      font-family: 'Syne', sans-serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      letter-spacing: -1px;
+      margin-bottom: 8px;
+    }
+    .date {
+      color: var(--muted);
+      font-size: 0.9rem;
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid var(--border);
+    }
+    h2 {
+      font-family: 'Syne', sans-serif;
+      font-size: 1.2rem;
+      font-weight: 600;
+      color: #1de9a0;
+      margin: 40px 0 12px;
+    }
+    p { 
+      color: #c8ddd4;
+      margin-bottom: 16px;
+      font-size: 0.97rem;
+    }
+    ul {
+      color: #c8ddd4;
+      margin: 0 0 16px 24px;
+      font-size: 0.97rem;
+    }
+    ul li { margin-bottom: 8px; }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 16px 0 24px;
+      font-size: 0.9rem;
+    }
+    th {
+      background: var(--card);
+      color: #1de9a0;
+      padding: 10px 14px;
+      text-align: left;
+      border: 1px solid var(--border);
+      font-weight: 500;
+    }
+    td {
+      padding: 10px 14px;
+      border: 1px solid var(--border);
+      color: #c8ddd4;
+      vertical-align: top;
+    }
+    .highlight {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-left: 3px solid #1de9a0;
+      padding: 16px 20px;
+      border-radius: 8px;
+      margin: 16px 0;
+      font-size: 0.93rem;
+      color: #c8ddd4;
+    }
+    a { color: #1de9a0; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+    footer {
+      border-top: 1px solid var(--border);
+      padding: 32px 48px;
+      text-align: center;
+      color: var(--muted);
+      font-size: 0.82rem;
+    }
+    @media (max-width: 768px) {
+      nav { padding: 16px 24px; }
+      h1 { font-size: 1.8rem; }
+      table { font-size: 0.8rem; }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="index.html" class="logo">Vetmo<span>Labs</span></a>
+  <a href="index.html" class="back">← Ana Sayfa</a>
+</nav>
+
+<div class="container">
+  <div class="badge">Yasal</div>
+  <h1>Gizlilik Politikası</h1>
+  <p class="date">Son Güncelleme: 20 Nisan 2026</p>
+
+  <h2>1. Giriş</h2>
+  <p>VetA mobil uygulamasını ("Uygulama") kullandığınız için teşekkür ederiz. Bu Gizlilik Politikası, kişisel verilerinizin nasıl toplandığını, işlendiğini, saklandığını ve korunduğunu açıklamaktadır.</p>
+  <p>Bu politika, 6698 sayılı Kişisel Verilerin Korunması Kanunu ("KVKK") ve ilgili mevzuat hükümlerine uygun olarak hazırlanmıştır.</p>
+  <div class="highlight">
+    <strong>Veri Sorumlusu:</strong> Aykut Berkeş Şahin (VetmoLabs)<br>
+    <strong>İletişim:</strong> <a href="mailto:info@vetmolabs.com">info@vetmolabs.com</a>
+  </div>
+
+  <h2>2. Toplanan Kişisel Veriler</h2>
+  <table>
+    <tr>
+      <th>Veri Kategorisi</th>
+      <th>Toplanan Veriler</th>
+      <th>Toplama Yöntemi</th>
+    </tr>
+    <tr>
+      <td>Kimlik Bilgileri</td>
+      <td>Ad, soyad, e-posta adresi</td>
+      <td>Kayıt sırasında kullanıcıdan</td>
+    </tr>
+    <tr>
+      <td>Meslek Bilgisi</td>
+      <td>Veteriner hekim / öğrenci durumu, belge</td>
+      <td>Kayıt sırasında kullanıcıdan</td>
+    </tr>
+    <tr>
+      <td>Kullanım Verileri</td>
+      <td>Görüntülenen hastalık bilgileri, kaydedilen reçeteler</td>
+      <td>Uygulama kullanımı sırasında otomatik</td>
+    </tr>
+    <tr>
+      <td>Cihaz Bilgileri</td>
+      <td>Cihaz türü, işletim sistemi, uygulama sürümü</td>
+      <td>Otomatik olarak sistem tarafından</td>
+    </tr>
+    <tr>
+      <td>Abonelik Bilgileri</td>
+      <td>Abonelik durumu, dönemi (kart bilgileri saklanmaz)</td>
+      <td>Google Play Store üzerinden</td>
+    </tr>
+  </table>
+  <div class="highlight">Kredi kartı veya banka kartı bilgileriniz tarafımızca hiçbir şekilde toplanmaz ve saklanmaz. Tüm ödeme işlemleri Google Play Store altyapısı üzerinden gerçekleştirilir.</div>
+
+  <h2>3. Kişisel Verilerin İşlenme Amaçları</h2>
+  <ul>
+    <li>Uygulama hizmetlerinin sunulması ve sürdürülmesi</li>
+    <li>Kullanıcı hesabının oluşturulması ve yönetilmesi</li>
+    <li>Abonelik yönetimi ve ödeme işlemlerinin yürütülmesi</li>
+    <li>Uygulama performansının ve içerik kalitesinin iyileştirilmesi</li>
+    <li>Teknik sorunların tespit edilmesi ve giderilmesi</li>
+    <li>Yasal yükümlülüklerin yerine getirilmesi</li>
+    <li>Kullanıcı ile iletişim (bildirimler, güncellemeler, önemli duyurular)</li>
+  </ul>
+
+  <h2>4. Verilerin Saklanma Süresi</h2>
+  <p>Kişisel verileriniz aşağıdaki süreler boyunca saklanmaktadır:</p>
+  <ul>
+    <li><strong>Hesap bilgileri:</strong> Hesabınız aktif olduğu sürece ve hesap silme talebinden itibaren 30 gün</li>
+    <li><strong>Kullanım verileri:</strong> Hesap silindiğinde kalıcı olarak silinnir</li>
+    <li><strong>Abonelik ve ödeme kayıtları:</strong> Yasal yükümlülükler gereği 10 yıl (Türk Ticaret Kanunu)</li>
+    <li><strong>Teknik loglar:</strong> 90 gün</li>
+  </ul>
+  <p>Saklama süresi dolan veriler sistemlerimizden otomatik olarak silinir veya anonim hale getirilir.</p>
+
+  <h2>5. Verilerin Silinmesi ve Hesap Kapatma</h2>
+  <p>Verilerinizin silinmesini talep etmek için iki yöntem mevcuttur:</p>
+  <ul>
+    <li><strong>Uygulama içinden:</strong> Profil → Ayarlar → Hesabı Sil</li>
+    <li><strong>E-posta ile:</strong> <a href="mailto:info@vetmolabs.com">info@vetmolabs.com</a> adresine "Hesap Silme Talebi" konusuyla yazın</li>
+  </ul>
+  <p>Silme talebi alındığında kişisel verileriniz <strong>30 gün içinde</strong> sistemlerimizden kalıcı olarak silinir. Yasal saklama yükümlülükleri kapsamındaki veriler (fatura bilgileri vb.) ilgili yasal süre boyunca anonim olarak saklanabilir. Silme işlemi geri alınamaz.</p>
+
+  <h2>6. Kişisel Verilerin Aktarılması</h2>
+  <p>Kişisel verileriniz kural olarak üçüncü kişilerle paylaşılmaz. Ancak aşağıdaki sınırlı durumlarda veri aktarımı yapılabilir:</p>
+  <ul>
+    <li><strong>Yasal zorunluluk:</strong> Yetkili kamu kurum ve kuruluşlarının hukuka uygun talepleri</li>
+    <li><strong>Altyapı sağlayıcıları:</strong> Supabase (veritabanı), Google Play (ödeme), RevenueCat (abonelik yönetimi)</li>
+  </ul>
+  <div class="highlight">Kişisel verileriniz reklam amaçlı olarak hiçbir üçüncü tarafa satılmaz, kiralanmaz veya ticari amaçla paylaşılmaz.</div>
+
+  <h2>7. Verilerin Güvenliği</h2>
+  <ul>
+    <li>Veriler şifrelenmiş bağlantılar (SSL/TLS) üzerinden iletilir</li>
+    <li>Veritabanı erişimi yetkilendirme ve kimlik doğrulama ile sınırlandırılmıştır</li>
+    <li>Kullanıcı şifreleri hash algoritması ile saklanır, düz metin olarak tutulmaz</li>
+    <li>Düzenli güvenlik gözden geçirmeleri yapılmaktadır</li>
+  </ul>
+
+  <h2>8. Kullanıcının Hakları (KVKK Madde 11)</h2>
+  <p>KVKK kapsamında aşağıdaki haklara sahipsiniz:</p>
+  <ul>
+    <li>Kişisel verilerinizin işlenip işlenmediğini öğrenme</li>
+    <li>Kişisel verileriniz işlenmişse buna ilişkin bilgi talep etme</li>
+    <li>Kişisel verilerinizin düzeltilmesini isteme</li>
+    <li>Kişisel verilerinizin silinmesini veya yok edilmesini isteme</li>
+    <li>İşlenen verilerin otomatik sistemler vasıtasıyla aleyhinize kullanılmasına itiraz etme</li>
+    <li>Kişisel verilerinizin kanuna aykırı işlenmesi sebebiyle zararın giderilmesini talep etme</li>
+  </ul>
+  <p>Bu haklarınızı kullanmak için <a href="mailto:info@vetmolabs.com">info@vetmolabs.com</a> adresine başvurabilirsiniz. Başvurular en geç <strong>30 gün</strong> içinde sonuçlandırılır.</p>
+
+  <h2>9. Çocukların Gizliliği</h2>
+  <p>VetA yalnızca lisanslı veteriner hekimlere yönelik profesyonel bir uygulamadır. 18 yaşın altındaki bireylerden bilerek kişisel veri toplamayız.</p>
+
+  <h2>10. Uluslararası Veri Aktarımı</h2>
+  <p>Uygulamanın teknik altyapısı için kullanılan hizmetler nedeniyle kişisel verileriniz Türkiye dışındaki sunucularda işlenebilir. Kullanılan altyapı sağlayıcıları (Supabase vb.) KVKK'nın 9. maddesi kapsamında endüstri standardı güvenlik önlemlerini uygular.</p>
+
+  <h2>11. Politika Değişiklikleri</h2>
+  <p>Bu Gizlilik Politikası gerektiğinde güncellenebilir. Önemli değişiklikler uygulama içi bildirim ve/veya e-posta yoluyla duyurulur. Değişikliklerden sonra uygulamayı kullanmaya devam etmeniz güncellenmiş politikayı kabul ettiğiniz anlamına gelir.</p>
+
+  <h2>12. İletişim</h2>
+  <div class="highlight">
+    <strong>VetmoLabs — Aykut Berkeş Şahin</strong><br>
+    Kars, Türkiye<br>
+    E-posta: <a href="mailto:info@vetmolabs.com">info@vetmolabs.com</a><br><br>
+    Başvurularınızda adınız, e-posta adresiniz ve talebinizin detayını belirtmeniz gerekmektedir. Başvurular en geç 30 gün içinde ücretsiz olarak sonuçlandırılır.
+  </div>
+</div>
+
+<footer>
+  © 2026 VetmoLabs. Tüm hakları saklıdır. — <a href="index.html">Ana Sayfa</a>
+</footer>
+
+</body>
+</html>
