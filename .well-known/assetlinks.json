@@ -1,0 +1,10 @@
+[{
+  "relation": ["delegate_permission/common.handle_all_urls"],
+  "target": {
+    "namespace": "android_app",
+    "package_name": "com.vetmolabs.veta",
+    "sha256_cert_fingerprints": [
+      "4A:8A:4A:6A:D7:7A:55:61:E8:97:49:AC:33:8D:B7:53:35:33:D9:96:CB:1E:7E:F0:24:63:D9:F7:D1:18:BB:5C"
+    ]
+  }
+}]
