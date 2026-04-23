@@ -10,7 +10,7 @@
     .tick { font-size: 64px; margin-bottom: 24px; }
     h1 { font-size: 1.5rem; color: #fff; margin-bottom: 12px; }
     p { color: #9ca3af; margin-bottom: 32px; }
-    a { display: inline-block; padding: 14px 32px; background: #0d6e4f; color: #fff; border-radius: 12px; text-decoration: none; font-weight: 600; }
+    a.btn { display: inline-block; padding: 14px 32px; background: #0d6e4f; color: #fff; border-radius: 12px; text-decoration: none; font-weight: 600; }
   </style>
 </head>
 <body>
@@ -18,10 +18,13 @@
     <div class="tick">✅</div>
     <h1>E-posta adresiniz doğrulandı!</h1>
     <p>Uygulamaya dönüp giriş yapabilirsiniz.</p>
-    <a href="veta://login-callback">Uygulamayı Aç</a>
+    <a href="veta://login-callback" class="btn">Uygulamayı Aç</a>
   </div>
   <script>
-    setTimeout(() => { window.location.href = 'veta://login-callback'; }, 1500);
+    // Deep link ile uygulamayı aç
+    setTimeout(() => {
+      window.location.href = 'veta://login-callback';
+    }, 1500);
   </script>
 </body>
 </html>
